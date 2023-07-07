@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  
+h1{
+    color: green;
+    font-size: 18px;
+}
+span{
+    color: purple;
+}
+
+.border1{
+    border: 3px solid green;
+}
+#mijn-eerste-div{
+    text-align: center;
+}
+
+</style>
+
+
+<script>
+// Dit is JavaScript comment
+let a = 6;
+let test = 123;
+
+console.log(a)
+
+let number = 8; // Getal
+let text = "Tekst"; // String
+let boolean = true; // True or False
+
+
+//Function Declaration
+function print() {
+    console.log("In Print");
+}
+
+// Function Call
+print()
+print()
+print()
+
+function telop(getal1, getal2) {
+console.log(getal1 + getal2);
+
+}
+telop(12,34)
+telop(567,34)
+
+// Oefening
+function multiply(getal3, getal4) {
+console.log(getal3 * getal4);
+
+}
+
+function divide(getal3, getal4) {
+console.log(getal3 / getal4);
+
+}
+
+function subtract(getal3, getal4, getal5) {
+console.log(getal3 - getal4 - getal5);
+
+}
+
+// Function Call
+multiply(12,24)
+divide(14,45)
+subtract(17,65,24)
+
+//Oefening
+
+function telop (a,b) {
+
+return a + b;
+}
+let antwoord = telop(3,4)
+console.log(antwoord)
+
+
+</script>
+
+</head>
+<body>
+    <h1>Mijn Eerste Applicatie</h1>
+    <h2>Mijn eerste h2</h2>
+
+    <span style="color: red; background-color: yellow;">Dit is een span</span> 
+    <span>Dit is een 2de span</span>
+    <p class="border1">Dit is een paragraaf</p><p>dit is paragraaf 2</p>
+
+    <img class="border1" src="html2.png">
+
+    <a href="second.html"> 
+        Dit gaat naar second.html
+    </a>
+
+<ol> 
+<li>Tekst 1</li>
+<li> Tekst 2</li>
+</ol>
+
+<div id="mijn-eerste-div">
+    <span>Span in Div</span>
+</div>
+
+<div> 
+    <ol>
+        <li> Lijst 1 </li>
+        <li> Lijst 2 </li>
+    </ol>
+</div>
+
+<input type="number" id="num1">
+<input type="number" id="num2">
+
+<button type="button" onclick="plus()">
+    telop
+</button>
+<button type="button" onclick="min()">
+    minus
+</button>
+<button type="button" onclick="keer()">
+    keer
+</button>
+<button type="button" onclick="deel()">
+    deel
+</button>
+
+<script>
+
+function plus(){
+
+    let num1veld = parseInt(document.getElementById('num1').value)
+    let num2veld = parseInt(document.getElementById('num2').value)
+    
+    let plusantw = (num1veld + num2veld);
+    alert(plusantw)
+}
+
+function min(){
+
+let num1veld = parseInt(document.getElementById('num1').value)
+let num2veld = parseInt(document.getElementById('num2').value)
+
+let minantw = (num1veld - num2veld);
+alert(minantw)
+}
+
+function keer(){
+
+let num1veld = parseInt(document.getElementById('num1').value)
+let num2veld = parseInt(document.getElementById('num2').value)
+
+let keerantw = (num1veld * num2veld);
+alert(keerantw)
+}
+function deel(){
+
+let num1veld = parseInt(document.getElementById('num1').value)
+let num2veld = parseInt(document.getElementById('num2').value)
+
+let deelantw = (num1veld / num2veld);
+alert(deelantw)
+}
+
+</script>
+
+</body>
+</html>
